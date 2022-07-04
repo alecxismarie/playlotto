@@ -49,8 +49,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 document.querySelector('.again').addEventListener('click', function () {
   chance = 5;
-  const secretNumber = Math.trunc(Math.random() * 20) + 1;
-  const guess = Number(document.querySelector('.guess').value);
+   secretNumber = Math.trunc(Math.random() * 20) + 1;
   console.log(chance, guess);
   document.querySelector('h1').textContent = 'Play Lotto now!';
   document.querySelector('.chance').textContent = '5';
